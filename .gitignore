@@ -1,0 +1,8 @@
+.idea/
+__pycache__/
+data/FERPlus-master/
+exe/
+mediapipe/
+models/net14.pkl
+
+cam.py
