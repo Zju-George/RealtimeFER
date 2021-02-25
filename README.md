@@ -1,5 +1,7 @@
 # RealTime Facial Expression Recognition in webcam 
 
+### Demo (oh God, gotta have shampoo!)
+
 ![gif](https://github.com/Zju-George/realtimeFER/raw/main/assets/livedemo.gif)
 
 ### Frameworks
@@ -9,7 +11,8 @@
 - **Facial Expression Recognition** is trained by [FER+](https://github.com/microsoft/FERPlus) dataset 
 which is held by Microsoft using DCNN (Deep Convolutional Neural Network).
 
-![nn](https://github.com/Zju-George/realtimeFER/raw/main/assets/nnstructure.jpg)
+![nn](https://github.com/Zju-George/realtimeFER/raw/main/assets/nnstructure.jpg) 
+(Thanks to @[zc](https://github.com/ZC119) of the image)
 
 ### Language & Dependencies
 
@@ -21,7 +24,7 @@ which is held by Microsoft using DCNN (Deep Convolutional Neural Network).
     - mediapipe
     - CUDA10.1 (optional)
     - ...
-- you may install all the dependencies via command `python -m pip install -r requirements`
+- you may install all the dependencies via command `python -m pip install -r requirements.txt`
     
 ### Details
 - **Usage**:
@@ -29,6 +32,11 @@ which is held by Microsoft using DCNN (Deep Convolutional Neural Network).
 python camdemo.py --camera 0
 ```
 
+- **Performance**: 
+    - Absolutely **REALTIME**! The model could achieve above average 60 FPS on a plain PC. If possible, 
+    use a GPU to gain better performance!
+    - My poor computer: Intel i7-7700K CPU (4.2GHz) with NVIDIA Quadro P2000 (5G memory)
+    
 - **Model Structure**: the model is quite simple actually. It uses Resnet50 to extract image features and
 then it is stacked 
 - **Accuracy**: the model achieves 79.8% accuracy evaluated by FER+ valid subset after 14 epochs of training using softCE loss. 
@@ -59,8 +67,3 @@ then it is stacked
     I found the loss rising upside and down a lot, which means it's not that numerical stable.
     
 ![data](https://github.com/Zju-George/realtimeFER/raw/main/assets/dataImbalence.png)
-    
-- **Performance**: 
-    - Absolutely **REALTIME**! The model could achieve above average 60 FPS on a plain PC. If possible, 
-    use a GPU to gain better performance!
-    - My poor computer: Intel i7-7700K CPU (4.2GHz) with NVIDIA Quadro P2000 (5G memory)
