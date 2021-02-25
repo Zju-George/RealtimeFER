@@ -12,6 +12,7 @@
 which is held by Microsoft using DCNN (Deep Convolutional Neural Network).
 
 ![nn](https://github.com/Zju-George/realtimeFER/raw/main/assets/nnstructure.jpg) 
+
 (Thanks to @[zc](https://github.com/ZC119) of the image)
 
 ### Language & Dependencies
@@ -33,12 +34,13 @@ python camdemo.py --camera 0
 ```
 
 - **Performance**: 
-    - Absolutely **REALTIME**! The model could achieve above average 60 FPS on a plain PC. If possible, 
-    use a GPU to gain better performance!
+    - Absolutely **REALTIME**! The model could achieve above the average 60 FPS on a plain PC. If possible, 
+    try use a GPU to gain better performance!
     - My poor computer: Intel i7-7700K CPU (4.2GHz) with NVIDIA Quadro P2000 (5G memory)
     
-- **Model Structure**: the model is quite simple actually. It uses Resnet50 to extract image features and
-then it is stacked 
+- **Model Structure**: the model is quite simple though. It uses Resnet50 to extract image features and
+then it is stacked by two fully connected layer, finally it outputs a 10-size digits vector corresponding to 10 emotion classes.
+
 - **Accuracy**: the model achieves 79.8% accuracy evaluated by FER+ valid subset after 14 epochs of training using softCE loss. 
 
     | epoch | KLdiv | softCE | weightedSoftCE |
