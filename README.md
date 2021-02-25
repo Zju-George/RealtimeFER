@@ -6,7 +6,7 @@
 
 ### Frameworks
 
-- **Face Dectection** is accomplished by [mediapipe](https://github.com/google/mediapipe) developed by Geogle.
+- **Face Dectection** is accomplished by [mediapipe](https://github.com/google/mediapipe) developed by Google.
 
 - **Facial Expression Recognition** is trained by [FER+](https://github.com/microsoft/FERPlus) dataset 
 which is held by Microsoft using DCNN (Deep Convolutional Neural Network).
