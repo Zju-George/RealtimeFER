@@ -1,4 +1,4 @@
-# RealTime Facial Expression Recognition in webcam 
+# RealTime Facial Expression Recognition for webcam application
 
 ### Demo (oh God, gotta have shampoo!)
 
@@ -39,7 +39,7 @@ python camdemo.py --camera 0
     - My poor computer: Intel i7-7700K CPU (4.2GHz) with NVIDIA Quadro P2000 (5G memory)
     
 - **Model Structure**: the model is quite simple though. It uses Resnet50 to extract image features and
-then it is stacked by two fully connected layer, finally it outputs a 10-size digits vector corresponding to 10 emotion classes.
+then it is stacked with two fully connected layer, finally it outputs a 10-size digits vector corresponding to 10 emotion classes.
 
 - **Accuracy**: the model achieves 79.8% accuracy evaluated by FER+ valid subset after 14 epochs of training using softCE loss. 
 
@@ -69,3 +69,5 @@ then it is stacked by two fully connected layer, finally it outputs a 10-size di
     I found the loss rising upside and down a lot, which means it's not that numerical stable.
     
 ![data](https://github.com/Zju-George/realtimeFER/raw/main/assets/dataImbalence.png)
+
+### 潜在应用
