@@ -13,14 +13,13 @@ LABELS = ('neutral', 'happiness', 'surprise', 'sadness', 'anger',
 TestDistribution = [1258, 928, 447, 446, 321, 20, 97, 28, 28, 0]
 TrainDistribution = [10295, 7526, 3557, 3530, 2463, 191, 655, 168, 171, 2]
 
-TrainDir = 'data/FERPlus-master/data/FER2013Train'
-TestDir = 'data/FERPlus-master/data/FER2013Test'
-ValidDir = 'data/FERPlus-master/data/FER2013Valid'
+TrainDir = '../data/FERPlus-master/data/FER2013Train'
+TestDir = '../data/FERPlus-master/data/FER2013Test'
+ValidDir = '../data/FERPlus-master/data/FER2013Valid'
 dataPath = {'Train': (TrainDir, os.path.join(TrainDir, 'label.csv')),
             'Test': (TestDir, os.path.join(TestDir, 'label.csv')),
             'Valid': (ValidDir, os.path.join(ValidDir, 'label.csv')),
             }
-
 
 def showSample(img=None, label=None, show=False):
     if type(img) == torch.Tensor:

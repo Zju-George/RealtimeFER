@@ -1,6 +1,6 @@
-from FERPlusDataset import *
-from utils import *
-from Net import *
+from src.FERPlusDataset import *
+from src.utils import *
+from src.Net import *
 import torch.optim as optim
 
 
@@ -19,7 +19,7 @@ class Train(object):
             self.net = Net().to(self.device)
         else:
             self.net = Net()
-            self.net.load_state_dict(torch.load('models/net' + str(self.trainedEpoch) + '.pkl'))
+            self.net.load_state_dict(torch.load('../models/net' + str(self.trainedEpoch) + '.pkl'))
             self.net = self.net.to(self.device)
             pass
         self.dataSet = FERPlusDataset(type=dataType, transform=transforms.Compose([Rescale(224), ToTensor()]))
@@ -50,7 +50,7 @@ class Train(object):
                 print(f'[{idx}/{self.oneEpochCnt}] avg loss: {self.avgLoss / 100.}')
                 self.avgLoss = 0.
         self.trainedEpoch += 1
-        torch.save(self.net.state_dict(), 'models/net' + str(self.trainedEpoch) + '.pkl')
+        torch.save(self.net.state_dict(), '../models/net' + str(self.trainedEpoch) + '.pkl')
         print(f'trainedEpoch: {self.trainedEpoch}')
 
     def testAccuracy(self):
@@ -90,10 +90,9 @@ def evalAccuracy(dataType='Test', trainedEpoch=1):
 
 
 if __name__ == '__main__':
-    trainSeveralEpoch(10)
-    for i in range(7, 17):
+    # trainSeveralEpoch(10)
+    for i in range(14, 15):
         evalAccuracy(dataType='Train', trainedEpoch=i)
-        evalAccuracy(dataType='Test', trainedEpoch=i)
 
 # Adam, lr:0.0001,
 # Accuracy:

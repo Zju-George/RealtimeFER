@@ -7,7 +7,7 @@ import mediapipe as mp
 import numpy as np
 import time
 import torch
-from Net import Net
+from src.Net import Net
 import torch.nn.functional as F
 import heapq
 from skimage import transform
