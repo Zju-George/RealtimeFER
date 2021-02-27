@@ -1,6 +1,6 @@
 # RealTime Facial Expression Recognition for webcam application
 
-### Demo (oh God, gotta have shampoo!)
+### Realtime Demo (using a pretty cheap camera)
 
 ![gif](https://github.com/Zju-George/realtimeFER/raw/main/assets/livedemo.gif)
 
@@ -17,10 +17,10 @@ which is held by Microsoft using DCNN (Deep Convolutional Neural Network).
 
 ### Language & Dependencies
 
-- Language: Python3.6
+- Language: python3.6
 - Dependencies:
 
-    - Pytorch
+    - pytorch
     - opencv-python
     - mediapipe
     - CUDA10.1 (optional)
@@ -44,7 +44,7 @@ then it is stacked with two fully connected layer, finally it outputs a 10-size 
 - **Accuracy**: the model achieves 79.8% accuracy evaluated by FER+ valid subset after 14 epochs of training using softCE loss. 
 
     | epoch | KLdiv | softCE | weightedSoftCE |
-    | :----: | :----: | :----: | :----:|    
+    | :----: | :----: | :----: | :----:|
     |  0   | 0.005 | 0.005  | 0.005  |
     |  1   | 0.55  | 0.598 | 0.56    |
     |  2   | 0.58  | 0.652 | 0.668   |
@@ -70,4 +70,17 @@ then it is stacked with two fully connected layer, finally it outputs a 10-size 
     
 ![data](https://github.com/Zju-George/realtimeFER/raw/main/assets/dataImbalence.png)
 
-### 潜在应用
+| Expressions | neutral | happiness | surprise | sadness | anger | disgust | fear | contempt | unknown | NF |
+| :----: | :----: |  :----: |  :----: |  :----: |  :----: |  :----: |  :----: |  :----: |  :----: |  :----: |  
+| index | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 
+
+### Potential applications
+
+- Online education for children, which could be used to identify whether children listen carefully; 
+For on-site meeting or school classroom, to judge the quality of the speech.
+
+![online](https://github.com/Zju-George/realtimeFER/raw/main/assets/online.jpg)
+
+- On-site Human–Machine Interaction.
+
+<img src="https://github.com/Zju-George/realtimeFER/raw/main/assets/offline.jpeg" alt="HMI" width="500" height="300" align="bottom" />
