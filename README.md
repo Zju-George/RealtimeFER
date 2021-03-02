@@ -22,16 +22,21 @@ which is held by Microsoft using DCNN (Deep Convolutional Neural Network).
 
     - pytorch
     - opencv-python
-    - mediapipe
+    - mediapipe (modified)
     - CUDA10.1 (optional)
     - ...
 - you may install all the dependencies via command `python -m pip install -r requirements.txt`
     
 ### Details
 - **Usage**:
-```shell script
-python camdemo.py --camera 0
-```
+    - (RECOMMENDED) run from prebuilt exe: see [release-windows-v0.1](https://github.com/Zju-George/realtimeFER/releases/tag/v0.1-alpha)
+    - run from source:
+        - replace `drawing_utils.py` in mediapipe with `src/drawing_utils.py` in which I slightly modified.
+        - contact me with Email to get the trained model.
+        ```shell script
+        python camdemo.py --camera 0
+        ```
+        
 
 - **Performance**: 
     - Absolutely **REALTIME**! The model could achieve above the average **60** FPS on a plain PC. If possible, 
