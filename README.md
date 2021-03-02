@@ -29,8 +29,8 @@ which is held by Microsoft using DCNN (Deep Convolutional Neural Network).
     
 ### Details
 - **Usage**:
-    - (RECOMMENDED) run from prebuilt exe: see [release-windows-v0.1](https://github.com/Zju-George/realtimeFER/releases/tag/v0.1-alpha)
-    - run from source:
+    - (Recommended) Run from prebuilt exe: see [release-windows-v0.1](https://github.com/Zju-George/realtimeFER/releases/tag/v0.1-alpha)
+    - Run from source:
         - replace `drawing_utils.py` in mediapipe with `src/drawing_utils.py` in which I slightly modified.
         - contact me with Email to get the trained model.
         ```shell script
