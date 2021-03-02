@@ -34,7 +34,7 @@ python camdemo.py --camera 0
 ```
 
 - **Performance**: 
-    - Absolutely **REALTIME**! The model could achieve above the average 60 FPS on a plain PC. If possible, 
+    - Absolutely **REALTIME**! The model could achieve above the average **60** FPS on a plain PC. If possible, 
     try use a GPU to gain better performance!
     - My poor computer: Intel i7-7700K CPU (4.2GHz) with NVIDIA Quadro P2000 (5G memory)
     
