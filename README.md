@@ -84,3 +84,21 @@ For on-site meeting or school classroom, to judge the quality of the speech.
 - On-site Human–Machine Interaction.
 
 <img src="https://github.com/Zju-George/realtimeFER/raw/main/assets/offline.jpeg" alt="HMI" width="500" height="300" align="bottom" />
+
+### TODO
+- make connection with Unity3D, maybe using Tcp socket.
+
+- for some specific applications, one may make specific face-expression-dataset and then fine-tune the model to meet one's needs.
+
+<img src="https://github.com/Zju-George/realtimeFER/raw/main/assets/children.jpg" alt="FEM" width="500" height="300" align="bottom" />
+
+- utilizing **3D point cloud space** rather than **image grayscale-color space** to make better AI predictions, maybe using
+frameworks like [pytorch-geometric](https://github.com/rusty1s/pytorch_geometric). Also, To make dataset lying in 3D point cloud space, 
+we could try something like mediapipe combined with face angle prediction to produce the 3D point cloud dataset which satisfies 
+**rotational invariance**.
+
+![geometric](https://github.com/Zju-George/realtimeFER/raw/main/assets/pytorch-geometric.jpg)
+
+- try something like FEM (Face Expression Migration). Typical applications are Apple Animoji, Virtual Uploader, etc.
+
+<img src="https://github.com/Zju-George/realtimeFER/raw/main/assets/FEM.png" alt="FEM" width="500" height="300" align="bottom" />
