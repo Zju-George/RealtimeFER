@@ -43,8 +43,8 @@ which is held by Microsoft using DCNN (Deep Convolutional Neural Network).
     try using a GPU to gain better performance!
     - My poor computer: Intel i7-7700K CPU (4.2GHz) with NVIDIA Quadro P2000 (5G memory)
     
-- **Model Structure**: the model is quite simple though. It uses Resnet50 to extract image features and
-then it is stacked with two fully connected layer, finally it outputs a 10-size digits vector corresponding to 10 emotion classes.
+- **Model Structure**: the model is quite simple though. It uses ResNet50 as backbone for feature extraction after which 
+it is stacked with two fully connected layer. The output is a 10-size digits vector corresponding to 10 emotion classes.
 
 - **Accuracy**: the model achieves 79.8% accuracy evaluated by FER+ valid subset after 14 epochs of training using softCE loss. 
 
