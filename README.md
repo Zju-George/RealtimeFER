@@ -8,7 +8,7 @@
 
 - **Face Dectection** is accomplished by [mediapipe](https://github.com/google/mediapipe) developed by Google.
 
-- **Facial Expression Recognition** is trained using DCNN (Deep Convolutional Neural Network) by [FER+](https://github.com/microsoft/FERPlus) dataset 
+- **Facial Expression Recognition** is trained using DCNN (Deep Convolutional Neural Network) with [FER+](https://github.com/microsoft/FERPlus) dataset 
 which is held by Microsoft.
 
 ![nn](https://github.com/Zju-George/realtimeFER/raw/main/assets/nnstructure.jpg) 
