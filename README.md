@@ -1,4 +1,4 @@
-# RealTime Facial Expression Recognition for webcam application
+# Real time facial expression recognition for webcam application
 
 ### Realtime Demo (using a pretty cheap camera)
 
