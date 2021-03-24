@@ -1,6 +1,6 @@
 # Real time facial expression recognition for webcam application
 
-### Real time Demo (using a normal RGB camera)
+### Real time Demo (using one RGB camera)
 
 ![gif](https://github.com/Zju-George/realtimeFER/raw/main/assets/livedemo.gif)
 
