@@ -88,4 +88,4 @@ For on-site meeting or school classroom, to judge the quality of the speech.
 
 - On-site Human–Machine Interaction.
 
-<img src="https://github.com/Zju-George/realtimeFER/raw/main/assets/offline.jpeg" alt="HMI" width="500" height="300" align="bottom" />
+<img src="https://github.com/Zju-George/realtimeFER/raw/main/assets/offline.jpeg" width="500" height="300" align="bottom" />
