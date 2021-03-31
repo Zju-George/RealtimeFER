@@ -60,8 +60,7 @@ class FER(object):
 
 def main(camera=0):
     # For webcam input:
-    face_mesh = mp_face_mesh.FaceMesh(
-        min_detection_confidence=0.5, min_tracking_confidence=0.5, max_num_faces=1)
+    face_mesh = mp_face_mesh.FaceMesh(min_detection_confidence=0.5, min_tracking_confidence=0.5, max_num_faces=1)
     drawing_spec = mp_drawing.DrawingSpec(thickness=1, circle_radius=1)
     fer = FER(trainedEpoch=14)
     cap = cv2.VideoCapture(camera)
@@ -89,13 +88,13 @@ def main(camera=0):
         if results.multi_face_landmarks:
             for face_landmarks in results.multi_face_landmarks:
                 # single face crop
-                x_min, x_max, y_min, y_max = mp_drawing.draw_landmarks(
+                x_min, x_max, y_min, y_max, _ = mp_drawing.draw_landmarks(
                     image=image,
                     landmark_list=face_landmarks,
                     connections=mp_face_mesh.FACE_CONNECTIONS,
                     landmark_drawing_spec=drawing_spec,
                     connection_drawing_spec=drawing_spec)
-                cv2.rectangle(image, (x_min - 1, y_min - 1), (x_max, y_max), (0, 255, 0), 1)
+                # cv2.rectangle(image, (x_min - 1, y_min - 1), (x_max, y_max), (0, 255, 0), 1)
                 crops.append(imageRaw[y_min:y_max, x_min:x_max])
         fps = 1. / (time.time() - timeStart)
         cv2.putText(image, f'fps: {round(fps, 1)}', (15, 25), 1, 2, (0, 0, 255), 2)
@@ -105,7 +104,6 @@ def main(camera=0):
             cv2.putText(image, emotion, (300, 25), 1, 2, (0, 0, 255), 2)
             pass
         cv2.imshow('Face', image)
-        # print(image.shape)
         if cv2.waitKey(5) & 0xFF == 27:
             break
     face_mesh.close()
