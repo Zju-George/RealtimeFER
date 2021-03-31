@@ -1,6 +1,6 @@
-# RealTime Facial Expression Recognition for webcam application
+# Real time facial expression recognition for webcam application
 
-### Realtime Demo (using a pretty cheap camera)
+### Real time Demo (using one RGB camera)
 
 ![gif](https://github.com/Zju-George/realtimeFER/raw/main/assets/livedemo.gif)
 
@@ -8,8 +8,8 @@
 
 - **Face Dectection** is accomplished by [mediapipe](https://github.com/google/mediapipe) developed by Google.
 
-- **Facial Expression Recognition** is trained by [FER+](https://github.com/microsoft/FERPlus) dataset 
-which is held by Microsoft using DCNN (Deep Convolutional Neural Network).
+- **Facial Expression Recognition** is trained using DCNN (Deep Convolutional Neural Network) with [FER+](https://github.com/microsoft/FERPlus) dataset 
+which is held by Microsoft.
 
 ![nn](https://github.com/Zju-George/realtimeFER/raw/main/assets/nnstructure.jpg) 
 
@@ -88,4 +88,4 @@ For on-site meeting or school classroom, to judge the quality of the speech.
 
 - On-site Human–Machine Interaction.
 
-<img src="https://github.com/Zju-George/realtimeFER/raw/main/assets/offline.jpeg" alt="HMI" width="500" height="300" align="bottom" />
+<img src="https://github.com/Zju-George/realtimeFER/raw/main/assets/offline.jpeg" width="500" height="300" align="bottom" />
