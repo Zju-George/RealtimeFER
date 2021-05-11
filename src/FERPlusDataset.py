@@ -1,5 +1,5 @@
 from __future__ import print_function, division
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import Dataset
 from torchvision import transforms
 from src.utils import *
 # Ignore warnings
